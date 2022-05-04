@@ -4,7 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    def mergeTwoLists(self, list1:ListNode, list2:ListNode):
         dummy = cur = ListNode(0)
         while list1 and list2:
             if list1.val < list2.val:
